@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Gincana SESI Leme 2025 </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   
+    <header class="text-white alinhar bg-gray-800">
+        <div>
+            <h1 class="alinhar borda0">Gincana SESI Leme 2025 <img class="borda0" src="img/Logo SESI SENAI.jpg "></h1>
+        </div>
+        
+    </header>
+
+    <main>        
+        <section id="carousel-section" class="relative w-full overflow-hidden" aria-label="Carrossel de Imagens">
+            <div class="relative h-64 md:h-96 xl:h-[32rem]">
+                <div id="carousel-inner" class="flex h-full">
+                    <div class="carousel-item min-w-full h-full">
+                        <img src="img/Banner Equipe Azul.png" alt="Imagem da abertura da gincana" class="w-full h-full object-cover">
+                    </div>
+                    <div class="carousel-item min-w-full h-full">
+                        <img src="img/Banner Equipe Vermelha.png" alt="Imagem de provas e desafios da gincana" class="w-full h-full object-cover">
+                    </div>
+                    <div class="carousel-item min-w-full h-full">
+                        <img src="img/Banner Equipe Amarela.jpg" alt="Imagem da torcida na gincana" class="w-full h-full object-cover">
+                    </div>
+                    <div class="carousel-item min-w-full h-full">
+                        <img src="img/Banner Equipe Verde.png" alt="Imagem da premiação da gincana" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controles de Navegação -->
+            <button id="prevBtn" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/50 hover:bg-white rounded-full p-2 focus:outline-none" aria-label="Imagem Anterior">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+            </button>
+            <button id="nextBtn" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/50 hover:bg-white rounded-full p-2 focus:outline-none" aria-label="Próxima Imagem">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+            </button>
+        </section>
+
+        <!-- Seção das Equipes -->
+        <section id="teams-section" class="py-12 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-8">Nossas Equipes</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="team-card text-center bg-gray-50 p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <a href="https://jueduarda.github.io/siteequipeazul/?authuser=0" target="_blank" ><img src="img/azul.png" alt="Logo da Equipe Azul" class="w-full h-48 object-cover rounded-md mb-4"></a>
+                <h3 class="text-xl font-semibold text-blue-600">Azul</h3>
+            </div>
+            <div class="team-card text-center bg-gray-50 p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <a href="https://renansevero2.github.io/Equipe-Amarela-/?authuser=0" target="_blank"> <img src="img/amarela.png" alt="Logo da Equipe Amarelo" class="w-full h-48 object-cover rounded-md mb-4"></a>
+                <h3 class="text-xl font-semibold text-yellow-500">Amarelo</h3>
+            </div>
+            <div class="team-card text-center bg-gray-50 p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <a href="https://manelcamarg.github.io/Equipe_Vermelha_Gincana/?authuser=0" target="_blank"> <img src="img/vermelho.png" alt="Logo da Equipe Vermelho" class="w-full h-48 object-cover rounded-md mb-4"> </a>
+                <h3 class="text-xl font-semibold text-red-500">Vermelho</h3>
+            </div>
+            <div class="team-card text-center bg-gray-50 p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <a href="https://lucas0rodrigo.github.io/EquipeGincana/?authuser=0" target="_blank" ><img src="img/verde.png" alt="Logo da Equipe Verde" class="w-full h-48 object-cover rounded-md mb-4"></a>
+                <h3 class="text-xl font-semibold text-green-500">Verde</h3>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Gincana SESI Leme. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Arquivo de Script JS -->
+    <script src="script.js"></script>
+</body>
+</html>
+
